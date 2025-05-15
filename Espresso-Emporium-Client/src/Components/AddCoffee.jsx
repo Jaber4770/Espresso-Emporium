@@ -60,8 +60,8 @@ const AddCoffee = () => {
                         <input type="text" name='name' className="input w-full" placeholder="Enter Coffee Name" />
                     </fieldset>
                     <fieldset className="fieldset">
-                        <legend className="fieldset-legend">Barista</legend>
-                        <input type="text" name='barista' className="input w-full" placeholder="Enter Barista Name" />
+                        <legend className="fieldset-legend">Quantity</legend>
+                        <input type="text" name='quantity' className="input w-full" placeholder="Enter Quantity" />
                     </fieldset>
                     <fieldset className="fieldset">
                         <legend className="fieldset-legend">Supplier</legend>
@@ -76,8 +76,8 @@ const AddCoffee = () => {
                         <input type="text" name='category' className="input w-full" placeholder="Enter Coffee Category" />
                     </fieldset>
                     <fieldset className="fieldset">
-                        <legend className="fieldset-legend">Details</legend>
-                        <input type="text" name='details' className="input w-full" placeholder="Enter Coffee Details" />
+                        <legend className="fieldset-legend">Price</legend>
+                        <input type="text" name='price' className="input w-full" placeholder="Enter Coffee Price" />
                     </fieldset>
                 </div>
                 <div className='space-y-5 mt-5'>
