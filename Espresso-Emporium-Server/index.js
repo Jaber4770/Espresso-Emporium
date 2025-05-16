@@ -29,7 +29,8 @@ async function run() {
         // Connect the client to the server	(optional starting in v4.7)
         await client.connect();
 
-        const coffeeCollection = client.db('Espresso-Emporium').collection('addcoffee')
+        const coffeeCollection = client.db('Espresso-Emporium').collection('addcoffee');
+        const userCollection = client.db("Espresso-Emporium").collection("users");
 
 
 
@@ -69,6 +70,15 @@ async function run() {
             const result = await coffeeCollection.deleteOne(query);
             res.send(result);
         })
+
+        // user related apis
+        app.post('/user', async (req, res) => {
+            const userProfile = req.body;
+            console.log(userProfile);
+            const result = await userCollection.insertOne(userProfile);
+            res.send(result);
+        })
+
 
 
 

@@ -7,6 +7,8 @@ import MainLayout from "./MainLayout";
 import Home from "./Pages/Home";
 import AddNewCoffee from "./Pages/AddNewCoffee";
 import CoffeeDetails from "./Components/CoffeeDetails";
+import SignIn from "./Components/SignIn";
+import SignUp from "./Components/SignUp";
 
 export const router = createBrowserRouter([
     {
@@ -31,6 +33,14 @@ export const router = createBrowserRouter([
                 path: 'coffeedetails/:id',
                 loader: () => fetch('http://localhost:3000/addcoffee'),
                 Component: CoffeeDetails
+            },
+            {
+                path: 'signin',
+                Component: SignIn
+            },
+            {
+                path: 'signup',
+                Component: SignUp
             }
 
         ]
